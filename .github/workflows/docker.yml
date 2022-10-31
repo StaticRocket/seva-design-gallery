@@ -28,5 +28,5 @@ jobs:
           image: ${{ github.event.repository.name }}
           platforms: linux/amd64,linux/arm64
           registry: ghcr.io
-          push: true
-
+          username: ${{ secrets.GHCR_USERNAME }}
+          password: ${{ secrets.GHCR_TOKEN }}
