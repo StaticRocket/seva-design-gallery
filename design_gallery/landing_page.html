@@ -1,0 +1,162 @@
+<!DOCTYPE html>
+<html>
+<head>
+<link rel="stylesheet" href="web_support/strapdown/v/0.2/fonts/glyphicons-halflings-regular.css"/>
+  <style>
+/* Font-face loader for modern browsers - woff2/woff */
+
+/* Roboto */
+
+/* Light: 300 weight */
+@font-face {
+  font-family: 'Roboto';
+  font-style: normal;
+  font-weight: 300;
+  font-display: swap;
+  src: local('Roboto Light'), local('Roboto-Light'), url('fonts/roboto-v20-latin-ext_latin_greek-300.woff2') format('woff2'), url('fonts/roboto-v20-latin-ext_latin_greek-300.woff') format('woff');
+}
+
+/* Regular: 400 weight */
+@font-face {
+  font-family: 'Roboto';
+  font-style: normal;
+  font-weight: 400;
+  font-display: swap;
+  src: local('Roboto'), local('Roboto-Regular'), url('fonts/roboto-v20-latin-ext_latin_greek-regular.woff2') format('woff2'), url('fonts/roboto-v20-latin-ext_latin_greek-regular.woff') format('woff');
+}
+
+/* Bold: 600 weight */
+/* We use Roboto medium 500 weight here, defined as 600 */
+@font-face {
+  font-family: 'Roboto';
+  font-style: normal;
+  font-weight: 600;
+  font-display: swap;
+  src: local('Roboto Medium'), local('Roboto-Medium'), url('fonts/roboto-v20-latin-ext_latin_greek-500.woff2') format('woff2'), url('fonts/roboto-v20-latin-ext_latin_greek-500.woff') format('woff');
+}
+
+/* Bold: 500 weight */
+/* Temporary old weight value of 500, to remove after webcomponent updates to new 600 values */
+@font-face {
+  font-family: 'Roboto';
+  font-style: normal;
+  font-weight: 500;
+  font-display: swap;
+  src: local('Roboto Medium'), local('Roboto-Medium'), url('fonts/roboto-v20-latin-ext_latin_greek-500.woff2') format('woff2'), url('fonts/roboto-v20-latin-ext_latin_greek-500.woff') format('woff');
+}
+
+  </style>
+<link rel="stylesheet" href="ticom.global.css"/>
+<link rel="stylesheet" href="web_support/strapdown/v/0.2/themes/united2.min.css"/>
+<link rel="stylesheet" href="web_support/strapdown/v/0.2/themes/bootstrap-responsive.min.css"/>
+<link rel="stylesheet" href="web_support/strapdown/v/0.2/strapdown.css"/>
+<link rel="shortcut icon" type="image/x-icon" href=".metadata/favicon.ico" />
+<link rel="stylesheet" href="web_support/highlight/styles/zenburn.css"/>
+<link rel="stylesheet" href="web_support/highlight/styles/resize.css"/>
+
+  </head>
+  <body>
+    
+
+
+<div class="ti-hero-top text-left" style="padding: 160px; background: url(images/homeopagewithccswhite.jpg); background-size: cover;">
+    <h1 class="u-header-underline" > <span style="font-size: 60px;">AM62x Design Gallery</span></h1>
+    <h3 class="overviewHeader-subHeading text-left" style="color: black; width:50%; ">Add connected human-machine interaction and AI to your design with <a href="https://www.ti.com/product/AM625" target="new">AM62x processors</a>.</h3>
+</div>
+<style>
+
+  .card{
+    padding:1em 1em 3em 1em;
+    height:100%;
+    position:relative;
+  }
+
+  .card > footer {
+    position:absolute;
+    bottom: 1em;
+
+  }
+
+  .card img {
+    width:100%;
+    display:block;
+  }
+  .ti_p-row{
+    margin-bottom: 40px;
+  }
+  p.label { text-transform:uppercase; color:#555;}
+
+  p.lead { font-weight:400; color:#555;}
+</style>
+<xmp></xmp>
+
+
+<div class="container"><!--container-->
+  <div class="ti_p-row">
+    <div class="col-md-12">
+      <h1>HMI Designs</h1>
+      <p>Explore HMI graphics reference created by Texas Instruments and third party hardware and software vendors in the TI ecosystem.</p>
+    </div>  
+  </div>
+</div><!--container-->
+
+ <div class="container"><!--container-->
+
+  <div class="ti_p-row u-sameheight">
+    <div class="ti_p-col-4">
+      <div class="card bg-light mb-3 mt-3 h-100 d-flex flex-column align-items-start u-boxShadow-2 u-cardBorder-top-red">
+        <p class="label">Texas Instruments</p>
+        <img class="animated-gif" src="images/industrial_hmi_rep1.gif" class="card-img-top" alt="...">
+        <p class="lead text">Industrial HMI </p>
+        <p class="lead text" style="font-size: 14px;">Demonstrates how to design QT based Industrial HMI demo running at 60fps for your display at full HD resolution. Design adds camera functionality to monitor operator with AI</p>
+        <footer>
+          <a href="" class="ti_box-cta-button mod-compact" style="color: #007c8c;" > Launch</a></footer>
+        </footer>
+      </div>
+    </div>
+
+    <div class="ti_p-col-4">
+      <div class="card bg-light mb-3 mt-3 h-100 d-flex flex-column align-items-start u-boxShadow-2 u-cardBorder-top-red">
+        <p class="label">Texas Instruments</p>
+        <img class="animated-gif" src="images/ThermoStat_demo_rep1.gif" class="card-img-top" alt="...">
+        <p class="lead text">Home Automation HMI: Themostat Design </p>
+        <p class="lead text" style="font-size: 14px;">Evaluate creation of home automation HMI on AM62x processors with Thermostat Design. Design adds connectivity function with ethernet and wifi to display location based weather updates and remote configuration</p>
+        <footer>
+          <input type="button" value="Launch" onclick="seva_send_message('app_thermostat_demo');" />
+	</footer>
+      </div>
+    </div>
+    
+    <div class="ti_p-col-4">
+      <div class="card bg-light mb-3 mt-3 h-100 d-flex flex-column align-items-start u-boxShadow-2  u-cardBorder-top-red">
+        <p class="label">Altia</p>
+        <img class="animated-gif" src="images/medical_hmi_rep1.gif" class="card-img-top" alt="...">
+        <p class="lead text">Health Monitor HMI Design</p>
+        <p class="lead text" style="font-size: 14px;">This health monitor features Altia GUI development software and optimized code generation solutions for TI AM62x. Altia’s streamlined workflow enables delivery of custom 2D/3D graphics on production hardware with safe, certifiable C code. Altia DeepScreen for TI AM62x leverages all on-chip features for best performance and lowest footprint</p>
+        <footer>
+          <footer><a href="" class="ti_box-cta-button mod-compact" style="color: #007c8c;" > Launch</a></footer>
+        </footer>
+      </div>
+    </div>
+  </div>
+	
+</div><!--container-->
+
+
+<script src="web_support/strapdown/vendor/jquery-1.11.2.min.js"></script>
+<script src="web_support/strapdown/vendor/bootstrap.min.js"></script>
+<script src="web_support/highlight/highlight.pack.js"></script>
+<script src="web_support/strapdown/v/0.2/strapdown.js"></script>
+<script>
+        var origin, source;
+        window.addEventListener("message", (event) => {
+                origin = event.origin;
+                source = event.source;
+                source.postMessage("seva-init", origin);
+        });
+        function seva_send_message(message) {
+                source.postMessage(message, origin);
+        }
+</script>
+</body>
+</html>
