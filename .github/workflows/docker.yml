@@ -25,8 +25,8 @@ jobs:
       - name: Build & Push Docker Image
         uses: mr-smithers-excellent/docker-build-push@v5
         with:
-          image: ${{ github.event.repository.name }}
-          platforms: linux/amd64,linux/arm64
+          image: ${{ github.event.repository.name }}/${{ github.event.repository.name }}
+          platform: linux/amd64,linux/arm64
           registry: ghcr.io
           username: ${{ secrets.GHCR_USERNAME }}
           password: ${{ secrets.GHCR_TOKEN }}
