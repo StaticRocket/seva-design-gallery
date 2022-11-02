@@ -4,4 +4,5 @@ RUN apk update && apk add --update lighttpd
 
 COPY design_gallery /var/www/localhost/htdocs
 
-ENTRYPOINT lighttpd -D -f /etc/lighttpd/lighttpd.conf
+EXPOSE 80
+CMD lighttpd -D -f /etc/lighttpd/lighttpd.conf
